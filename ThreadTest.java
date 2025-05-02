@@ -6,7 +6,7 @@ public class ThreadTest {
   private static final int DELAY          = 10;  // max sleep time (ms)
 
   public static void main(String[] args) {
-      Bank bank = new Bank(N_ACCOUNTS, INITIAL_BAL);
+      Bank2 bank = new Bank2(N_ACCOUNTS, INITIAL_BAL);
 
       // Thread 1: transfer between account 0 → 1
       Runnable r1 = () -> {
