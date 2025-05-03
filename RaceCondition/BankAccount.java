@@ -7,15 +7,15 @@ public class BankAccount {
     balance = 0;
   }
 
-  public void deposit(double amount) {
+  public synchronized void deposit(double amount) {
     balance += amount;
   }
 
-  public void withdraw(double amount) {
+  public synchronized void withdraw(double amount) {
     balance -= amount;
   }
 
-  public double getBalance() {
+  public synchronized double getBalance() {
     return balance;
   }
 }
